@@ -1,0 +1,833 @@
+/* ======== Global Styles ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* ======== Navigation Bar ======== */
+nav {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 12px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    height: 13%;
+    display: flex;
+    justify-content: center; /* Centers the navbar content */
+    align-items: center; /* Vertically centers the navbar items */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centers the navbar items horizontally */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover, .active {
+    background: rgba(0, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* ======== About Us Section ======== */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#about {
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 50px auto;
+    width: 65%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 11%;
+}
+
+#about h1 {
+    font-size: 3.5rem;
+    color: #00e6e6;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#about p {
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0.85;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ .purpose-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 65%;
+}
+
+.purpose-section h2 {
+    font-size: 2.5rem;
+    color: #00e6e6;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.purpose-section p{
+    
+    font-size: 1.5rem;
+    margin: 12px 0;
+    color: white;
+    line-height: 1.8;
+}
+.purpose-section ul {
+    list-style-type: disc;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.purpose-section ul li {
+    font-size: 1.3rem;
+    margin: 12px 0;
+    color: white;
+    line-height: 1.8;
+}
+
+/* Styling for the images or icons (optional) */
+#about .team-img, .about-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#about .team-img:hover, .about-img:hover {
+    transform: scale(1.05);
+}
+
+/* Adding smooth scroll animation to mission/purpose */
+.purpose-section {
+    transition: transform 0.5s ease-in-out;
+}
+
+.purpose-section:hover {
+    transform: translateY(-10px);
+}
+
+/* ======== About Us Subsection Titles ======== */
+#about .sub-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #00e6e6;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* ======== About Us Section Responsiveness ======== */
+@media (max-width: 768px) {
+    #about {
+        width: 90%;
+    }
+
+    #about h1 {
+        font-size: 2.8rem;
+    }
+
+    #about p {
+        font-size: 1.4rem;
+    }
+
+    .purpose-section {
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .purpose-section ul {
+        margin-left: 30px;
+    }
+
+    #about .sub-title {
+        font-size: 1.7rem;
+    }
+}
+
+/* ======== Hero Section ======== */
+.hero {
+    display: flex;
+    justify-content: space-between; /* Spaces out the left and right sections */
+    align-items: center; /* Vertically centers the content */
+    padding: 150px 20px;
+    margin-top: 80px; /* Offset for fixed navbar */
+    height: 100vh;
+}
+
+.hero .text-content {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+    max-width: 50%; /* Limit width to 50% to leave space for the image */
+    padding-left: 12%;
+}
+
+.hero .text-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #00e6e6;
+    margin-bottom: 20px; /* Space between title and description */
+}
+
+.hero .text-content p {
+    font-size: 1.8rem;
+    opacity: 0.9;
+    margin-bottom: 30px; /* Space before the button */
+}
+
+.hero .cta-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    background: #00e6e6;
+    color: #0f2027;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero .cta-btn:hover {
+    background: #00ffff;
+    transform: scale(1.1);
+}
+
+/* Add Image to the Right Side */
+.hero .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    max-width: 50%; /* Limit width to 50% */
+}
+
+.hero .image-content img {
+    max-width: 80%; /* Ensures the image doesn't take up the entire width */
+    height: auto;
+    border-radius: 15px;
+}
+
+/* ======== Courses Section ======== */
+#courses {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    margin: 50px auto;
+    width: 90%;
+}
+
+#courses h2 {
+    font-size: 2.5rem;
+    color: #00e6e6;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 15px;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: space-between;
+}
+
+.course-card img {
+    max-width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures image scales well */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    color: #00e6e6;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+/* Hover effect for course card */
+.course-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ======== Contact Section ======== */
+.contact-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    margin: 50px auto;
+    width: 90%;
+    color: white;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #00e6e6;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background: transparent;
+    border: 1px solid #00e6e6;
+    border-radius: 8px;
+    color: white;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #aaa;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #00e6e6;
+    color: #0f2027;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #00ffff;
+    transform: scale(1.05);
+}
+/* ======== Resources Section ======== */
+#resources {
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 50px auto;
+    width: 85%;
+    color: white;
+    text-align: center;
+    margin-top: 9%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#resources h1 {
+    font-size: 3.5rem;
+    color: #00e6e6;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#resources p {
+    font-size: 1.5rem;
+    opacity: 0.85;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ======== Search Bar ======== */
+.search-container {
+    margin-bottom: 40px;
+}
+
+#search-input {
+    padding: 12px;
+    width: 70%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid #00e6e6;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+#search-input::placeholder {
+    color: #aaa;
+}
+/* ======== Course Detail Page Styles ======== */
+
+#course-detail {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 50px 20px;
+    margin-top: 7%;
+}
+
+.course-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.course-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00e6e6;
+    margin-bottom: 10px;
+}
+
+.course-header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* ======== Course Overview Section ======== */
+.course-overview {
+    margin-bottom: 40px;
+}
+
+.course-overview h2 {
+    font-size: 2rem;
+    color: #00e6e6;
+    margin-bottom: 15px;
+}
+
+.course-overview p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* ======== Syllabus Section ======== */
+.syllabus {
+    margin-bottom: 40px;
+}
+
+.syllabus h2 {
+    font-size: 2rem;
+    color: #00e6e6;
+    margin-bottom: 15px;
+}
+
+.syllabus ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.syllabus li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.syllabus li strong {
+    color: #00e6e6;
+}
+
+/* ======== Learning Outcomes Section ======== */
+.learning-outcomes {
+    margin-bottom: 40px;
+}
+
+.learning-outcomes h2 {
+    font-size: 2rem;
+    color: #00e6e6;
+    margin-bottom: 15px;
+}
+
+.learning-outcomes ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.learning-outcomes li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* ======== Estimated Time Section ======== */
+.estimated-time {
+    margin-bottom: 40px;
+}
+
+.estimated-time h2 {
+    font-size: 2rem;
+    color: #00e6e6;
+    margin-bottom: 15px;
+}
+
+.estimated-time p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ======== Video Tutorials Section ======== */
+.video-tutorials {
+    margin-bottom: 40px;
+}
+
+.video-tutorials h2 {
+    font-size: 2rem;
+    color: #00e6e6;
+    margin-bottom: 15px;
+}
+
+.video-container {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.video-container iframe {
+    border-radius: 15px;
+}
+
+.video-container p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+/* ======== Downloadable Resources Section ======== */
+.downloadable-resources {
+    margin-bottom: 40px;
+}
+
+.downloadable-resources h2 {
+    font-size: 2rem;
+    color: #00e6e6;
+    margin-bottom: 15px;
+}
+
+.downloadable-resources ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.downloadable-resources li {
+    margin-bottom: 15px;
+}
+
+.downloadable-resources a {
+    color: #00e6e6;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: rgba(0, 255, 255, 0.3);
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.downloadable-resources a:hover {
+    background: #00ffff;
+    transform: scale(1.05);
+}
+
+/* ======== Responsive Design for Smaller Screens ======== */
+@media (max-width: 768px) {
+    #course-detail {
+        padding: 30px 15px;
+    }
+
+    .course-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .course-header p {
+        font-size: 1rem;
+    }
+
+    .course-overview h2,
+    .syllabus h2,
+    .learning-outcomes h2,
+    .estimated-time h2,
+    .video-tutorials h2,
+    .downloadable-resources h2 {
+        font-size: 1.5rem;
+    }
+
+    .course-overview p,
+    .syllabus li,
+    .learning-outcomes li,
+    .estimated-time p,
+    .video-container p,
+    .downloadable-resources a {
+        font-size: 1rem;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .downloadable-resources a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}
+
+
+/* ======== Categories Section ======== */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.category {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 30%;
+}
+
+.category h2 {
+    color: #00e6e6;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category ul li {
+    font-size: 1.2rem;
+    margin: 12px 0;
+    color: white;
+}
+
+.category ul li a {
+    color: #00e6e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.category ul li a:hover {
+    text-decoration: underline;
+    color: #00ffff;
+}
+
+/* ======== Responsive Design ======== */
+@media (max-width: 768px) {
+    #resources {
+        margin-top: 15%;
+        width: 90%;
+    }
+
+    #resources h1 {
+        font-size: 2.8rem;
+    }
+
+    #resources p {
+        font-size: 1.4rem;
+    }
+
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    #search-input {
+        width: 90%;
+    }
+}
+
+
+/* ======== Quiz Section ======== */
+.quiz-container {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 50px auto;
+    width: 60%;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10%;
+}
+
+#question-container h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00e6e6;
+}
+
+.options {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.options label {
+    display: block;
+    padding: 10px;
+    margin: 8px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 75%;
+}
+
+.options label:hover {
+    background: rgba(0, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #00e6e6;
+    color: #0f2027;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00ffff;
+    transform: scale(1.05);
+}
+
+#timer {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#result {
+    font-size: 1.5rem;
+    color: #00e6e6;
+    margin-top: 20px;
+}
+
+/* ======== Footer ======== */
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .contact-form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    /* Adjust hero section for smaller screens */
+    .hero {
+        flex-direction: column;
+        padding: 100px 20px;
+        height: auto;
+    }
+
+    .hero .text-content {
+        padding-left: 0;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero .image-content {
+        max-width: 100%;
+    }
+}
