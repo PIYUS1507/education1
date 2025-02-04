@@ -1,4 +1,4 @@
-/* ======== Global Styles ======== */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,6 @@ body {
     color: white;
 }
 
-/* ======== Navigation Bar ======== */
 nav {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
@@ -25,14 +24,14 @@ nav {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
     height: 13%;
     display: flex;
-    justify-content: center; /* Centers the navbar content */
-    align-items: center; /* Vertically centers the navbar items */
+    justify-content: center; 
+    align-items: center; 
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* Centers the navbar items horizontally */
+    justify-content: center; 
     margin: 0;
     padding: 0;
 }
@@ -55,7 +54,6 @@ nav ul li a:hover, .active {
     transform: scale(1.1);
 }
 
-/* ======== About Us Section ======== */
 .main{
     display: flex;
     align-items: center;
@@ -127,7 +125,6 @@ nav ul li a:hover, .active {
     line-height: 1.8;
 }
 
-/* Styling for the images or icons (optional) */
 #about .team-img, .about-img {
     width: 100%;
     height: auto;
@@ -140,7 +137,6 @@ nav ul li a:hover, .active {
     transform: scale(1.05);
 }
 
-/* Adding smooth scroll animation to mission/purpose */
 .purpose-section {
     transition: transform 0.5s ease-in-out;
 }
@@ -149,7 +145,6 @@ nav ul li a:hover, .active {
     transform: translateY(-10px);
 }
 
-/* ======== About Us Subsection Titles ======== */
 #about .sub-title {
     font-size: 2rem;
     font-weight: 600;
@@ -158,7 +153,6 @@ nav ul li a:hover, .active {
     margin-bottom: 10px;
 }
 
-/* ======== About Us Section Responsiveness ======== */
 @media (max-width: 768px) {
     #about {
         width: 90%;
@@ -186,20 +180,19 @@ nav ul li a:hover, .active {
     }
 }
 
-/* ======== Hero Section ======== */
 .hero {
     display: flex;
-    justify-content: space-between; /* Spaces out the left and right sections */
-    align-items: center; /* Vertically centers the content */
+    justify-content: space-between; 
+    align-items: center; 
     padding: 150px 20px;
-    margin-top: 80px; /* Offset for fixed navbar */
+    margin-top: 80px; 
     height: 100vh;
 }
 
 .hero .text-content {
     flex: 1;
-    text-align: left; /* Align text to the left */
-    max-width: 50%; /* Limit width to 50% to leave space for the image */
+    text-align: left;
+    max-width: 50%;
     padding-left: 12%;
 }
 
@@ -207,13 +200,13 @@ nav ul li a:hover, .active {
     font-size: 5rem;
     font-weight: 700;
     color: #00e6e6;
-    margin-bottom: 20px; /* Space between title and description */
+    margin-bottom: 20px; 
 }
 
 .hero .text-content p {
     font-size: 1.8rem;
     opacity: 0.9;
-    margin-bottom: 30px; /* Space before the button */
+    margin-bottom: 30px;
 }
 
 .hero .cta-btn {
@@ -233,22 +226,20 @@ nav ul li a:hover, .active {
     transform: scale(1.1);
 }
 
-/* Add Image to the Right Side */
 .hero .image-content {
     flex: 1;
     display: flex;
-    justify-content: center; /* Center image horizontally */
-    align-items: center; /* Center image vertically */
-    max-width: 50%; /* Limit width to 50% */
+    justify-content: center; 
+    align-items: center; 
+    max-width: 50%; 
 }
 
 .hero .image-content img {
-    max-width: 80%; /* Ensures the image doesn't take up the entire width */
+    max-width: 80%; 
     height: auto;
     border-radius: 15px;
 }
 
-/* ======== Courses Section ======== */
 #courses {
     text-align: center;
     padding: 80px 20px;
@@ -277,14 +268,14 @@ nav ul li a:hover, .active {
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
     display: flex;
-    flex-direction: column; /* Stacks elements vertically */
+    flex-direction: column; 
     justify-content: space-between;
 }
 
 .course-card img {
     max-width: 100%;
-    height: 200px; /* Fixed height for uniformity */
-    object-fit: cover; /* Ensures image scales well */
+    height: 200px;
+    object-fit: cover; 
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -295,12 +286,11 @@ nav ul li a:hover, .active {
     font-size: 1.5rem;
 }
 
-/* Hover effect for course card */
 .course-card:hover {
     transform: translateY(-8px);
 }
 
-/* ======== Contact Section ======== */
+
 .contact-section {
     text-align: center;
     padding: 80px 20px;
@@ -382,7 +372,7 @@ nav ul li a:hover, .active {
     background: #00ffff;
     transform: scale(1.05);
 }
-/* ======== Resources Section ======== */
+
 #resources {
     padding: 80px 20px;
     background: rgba(255, 255, 255, 0.1);
@@ -412,7 +402,6 @@ nav ul li a:hover, .active {
     margin-right: auto;
 }
 
-/* ======== Search Bar ======== */
 .search-container {
     margin-bottom: 40px;
 }
@@ -431,7 +420,6 @@ nav ul li a:hover, .active {
 #search-input::placeholder {
     color: #aaa;
 }
-/* ======== Course Detail Page Styles ======== */
 
 #course-detail {
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
@@ -459,7 +447,6 @@ nav ul li a:hover, .active {
     margin: 0 auto;
 }
 
-/* ======== Course Overview Section ======== */
 .course-overview {
     margin-bottom: 40px;
 }
@@ -476,7 +463,6 @@ nav ul li a:hover, .active {
     line-height: 1.6;
 }
 
-/* ======== Syllabus Section ======== */
 .syllabus {
     margin-bottom: 40px;
 }
@@ -501,7 +487,6 @@ nav ul li a:hover, .active {
     color: #00e6e6;
 }
 
-/* ======== Learning Outcomes Section ======== */
 .learning-outcomes {
     margin-bottom: 40px;
 }
@@ -522,7 +507,6 @@ nav ul li a:hover, .active {
     margin-bottom: 10px;
 }
 
-/* ======== Estimated Time Section ======== */
 .estimated-time {
     margin-bottom: 40px;
 }
@@ -538,7 +522,6 @@ nav ul li a:hover, .active {
     opacity: 0.9;
 }
 
-/* ======== Video Tutorials Section ======== */
 .video-tutorials {
     margin-bottom: 40px;
 }
@@ -564,7 +547,6 @@ nav ul li a:hover, .active {
     margin-top: 10px;
 }
 
-/* ======== Downloadable Resources Section ======== */
 .downloadable-resources {
     margin-bottom: 40px;
 }
@@ -599,7 +581,6 @@ nav ul li a:hover, .active {
     transform: scale(1.05);
 }
 
-/* ======== Responsive Design for Smaller Screens ======== */
 @media (max-width: 768px) {
     #course-detail {
         padding: 30px 15px;
@@ -643,7 +624,6 @@ nav ul li a:hover, .active {
 }
 
 
-/* ======== Categories Section ======== */
 .categories {
     display: flex;
     justify-content: space-around;
@@ -689,7 +669,6 @@ nav ul li a:hover, .active {
     color: #00ffff;
 }
 
-/* ======== Responsive Design ======== */
 @media (max-width: 768px) {
     #resources {
         margin-top: 15%;
@@ -720,7 +699,6 @@ nav ul li a:hover, .active {
 }
 
 
-/* ======== Quiz Section ======== */
 .quiz-container {
     text-align: center;
     padding: 40px 20px;
@@ -794,7 +772,6 @@ button:hover {
     margin-top: 20px;
 }
 
-/* ======== Footer ======== */
 footer {
     background: rgba(255, 255, 255, 0.1);
     text-align: center;
@@ -802,7 +779,6 @@ footer {
     margin-top: 40px;
 }
 
-/* Responsiveness */
 @media (max-width: 768px) {
     .contact-form-container {
         flex-direction: column;
@@ -814,7 +790,6 @@ footer {
         width: 90%;
     }
 
-    /* Adjust hero section for smaller screens */
     .hero {
         flex-direction: column;
         padding: 100px 20px;
